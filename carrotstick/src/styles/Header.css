@@ -1,0 +1,11 @@
+.header {
+    height: 10vh;
+    background-color: orange;
+    width: 100%;
+}
+
+.header_txt {
+    color: white;
+    font-size: 25px;
+    padding-left: 20px ;
+}

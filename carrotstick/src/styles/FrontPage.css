@@ -1,0 +1,38 @@
+
+.fp_main {
+    background-image: url('./../media/carrotstick-fp-01.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fp_main > p {
+    font-size: 28px;
+}
+
+.fp_logo {
+    background-image: url('./../media/SVG/logo.svg');
+    height: 100px;
+    width: 250px;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.define {
+    margin: 0;
+}
+
+.pick {
+    margin-bottom: 50px;
+}
+
+.fp_button {
+    background-color: white;
+    height: 50px;
+    width: 125px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: gray;
+}

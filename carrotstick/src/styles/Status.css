@@ -1,0 +1,14 @@
+.status_main {
+    padding: 10px;
+}
+
+.status {
+    display: flex;
+    border: 2px solid red;
+    height: 25vh;
+}
+
+.status_img {
+    width: 40%;
+    border: 2px solid black;
+}

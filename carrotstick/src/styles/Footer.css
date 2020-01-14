@@ -1,0 +1,19 @@
+.footer {
+    height: 10vh;
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_logo {
+    height: 50px;
+    width: 50px;
+    padding: 10px 60px;
+}
+
+.habits_logo {
+    height: 50px;
+    width: 50px;
+    padding: 10px 60px;
+}
