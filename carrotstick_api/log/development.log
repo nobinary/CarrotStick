@@ -7924,3 +7924,601 @@ Processing by HabitsController#index as HTML
 Completed 200 OK in 52ms (Views: 3.8ms | ActiveRecord: 44.4ms | Allocations: 1666)
 
 
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:51:16 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.5ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 2.6ms | Allocations: 1771)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:51:38 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:52:06 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (6.8ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 3.3ms | ActiveRecord: 7.4ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:53:02 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.9ms | Allocations: 1668)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:56:57 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 3.7ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:58:28 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (16.5ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 2.8ms | ActiveRecord: 16.9ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:58:32 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (4.8ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 4.4ms | ActiveRecord: 6.6ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:59:08 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (7.5ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 2.3ms | ActiveRecord: 9.3ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:59:43 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 17:59:59 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:00:19 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.1ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:01:56 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:02:15 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (1.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 1.5ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:06:12 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (1.8ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 2.0ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:07:40 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (2.4ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 2.7ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:07:45 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.0ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:08:34 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.1ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:21:13 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 1771)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:27:06 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.4ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 1.1ms | Allocations: 1771)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:27:09 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-14 18:46:08 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.0ms | Allocations: 1771)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 09:44:28 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.4ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 9.5ms | ActiveRecord: 1.2ms | Allocations: 1771)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 09:44:49 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 0.5ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 09:45:49 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.4ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 6.3ms | ActiveRecord: 1.9ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 09:45:56 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (33.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (5.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 49ms (Views: 4.2ms | ActiveRecord: 38.4ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 09:46:12 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 1665)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 09:46:18 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 1.5ms | Allocations: 1665)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 10:11:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/habits"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/habits" for ::1 at 2020-01-15 10:11:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/habits"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/habits" for ::1 at 2020-01-15 10:12:06 -0500
+Processing by HabitsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 545)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/habits_controller.rb:9:in `index'
+Started GET "/habits" for ::1 at 2020-01-15 10:12:12 -0500
+Processing by HabitsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 494)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/habits_controller.rb:9:in `index'
+Started GET "/habits" for ::1 at 2020-01-15 10:12:58 -0500
+Processing by HabitsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 142)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 10:13:03 -0500
+Processing by HabitsController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 97)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 10:13:20 -0500
+Processing by HabitsController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 142)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 10:13:22 -0500
+Processing by HabitsController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 97)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 10:13:37 -0500
+Processing by HabitsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+  
+NoMethodError (undefined method `all' for nil:NilClass):
+  
+app/controllers/habits_controller.rb:9:in `index'
+Started GET "/habits" for ::1 at 2020-01-15 10:14:15 -0500
+Processing by HabitsController#index as HTML
+  [1m[36mHabit Load (1.0ms)[0m  [1m[34mSELECT "habits".* FROM "habits"[0m
+  ↳ app/controllers/habits_controller.rb:10:in `index'
+Completed 200 OK in 100ms (Views: 17.5ms | ActiveRecord: 77.5ms | Allocations: 5810)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:15:44 -0500
+Processing by HabitsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 124)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: habit):
+  
+app/controllers/habits_controller.rb:52:in `habit_params'
+app/controllers/habits_controller.rb:21:in `create'
+Started POST "/habits" for ::1 at 2020-01-15 10:16:29 -0500
+Processing by HabitsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: habit):
+  
+app/controllers/habits_controller.rb:52:in `habit_params'
+app/controllers/habits_controller.rb:21:in `create'
+Started POST "/habit" for ::1 at 2020-01-15 10:16:47 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/habit"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/habits" for ::1 at 2020-01-15 10:16:51 -0500
+Processing by HabitsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: habit):
+  
+app/controllers/habits_controller.rb:52:in `habit_params'
+app/controllers/habits_controller.rb:21:in `create'
+Started POST "/habits" for ::1 at 2020-01-15 10:17:09 -0500
+Processing by HabitsController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: habit):
+  
+app/controllers/habits_controller.rb:52:in `habit_params'
+app/controllers/habits_controller.rb:21:in `create'
+Started POST "/habits" for ::1 at 2020-01-15 10:17:47 -0500
+Processing by HabitsController#create as */*
+Completed 422 Unprocessable Entity in 404ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 180283)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:18:11 -0500
+Processing by HabitsController#create as */*
+Completed 422 Unprocessable Entity in 16ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 4973)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:19:18 -0500
+Processing by HabitsController#create as */*
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 562)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:20:27 -0500
+Processing by HabitsController#create as */*
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[36mHabit Create (35.3ms)[0m  [1m[32mINSERT INTO "habits" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-01-15 15:20:28.010837"], ["updated_at", "2020-01-15 15:20:28.010837"]]
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+Completed 201 Created in 75ms (Views: 0.9ms | ActiveRecord: 57.4ms | Allocations: 6092)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:21:01 -0500
+Processing by HabitsController#create as */*
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[36mHabit Create (0.5ms)[0m  [1m[32mINSERT INTO "habits" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-01-15 15:21:01.618738"], ["updated_at", "2020-01-15 15:21:01.618738"]]
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+Completed 201 Created in 11ms (Views: 0.4ms | ActiveRecord: 6.3ms | Allocations: 2274)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:22:08 -0500
+Processing by HabitsController#create as */*
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[36mHabit Create (0.6ms)[0m  [1m[32mINSERT INTO "habits" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-01-15 15:22:08.315657"], ["updated_at", "2020-01-15 15:22:08.315657"]]
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+Completed 201 Created in 10ms (Views: 0.4ms | ActiveRecord: 6.5ms | Allocations: 2275)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:22:32 -0500
+Processing by HabitsController#create as */*
+  Parameters: {"name"=>"wake up early"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[36mHabit Create (0.4ms)[0m  [1m[32mINSERT INTO "habits" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "wake up early"], ["created_at", "2020-01-15 15:22:32.259394"], ["updated_at", "2020-01-15 15:22:32.259394"]]
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+Completed 201 Created in 11ms (Views: 0.8ms | ActiveRecord: 6.7ms | Allocations: 2334)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:23:24 -0500
+Processing by HabitsController#create as */*
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[36mHabit Create (0.2ms)[0m  [1m[32mINSERT INTO "habits" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-01-15 15:23:24.332732"], ["updated_at", "2020-01-15 15:23:24.332732"]]
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+Completed 201 Created in 10ms (Views: 0.6ms | ActiveRecord: 6.5ms | Allocations: 2273)
+
+
+Started POST "/habits" for ::1 at 2020-01-15 10:23:36 -0500
+Processing by HabitsController#create as */*
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[36mHabit Create (0.5ms)[0m  [1m[32mINSERT INTO "habits" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-01-15 15:23:36.935353"], ["updated_at", "2020-01-15 15:23:36.935353"]]
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/habits_controller.rb:23:in `create'
+Completed 201 Created in 11ms (Views: 0.5ms | ActiveRecord: 6.1ms | Allocations: 2273)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 10:24:49 -0500
+Processing by HabitsController#index as HTML
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits"[0m
+  ↳ app/controllers/habits_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 2518)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 10:26:20 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 106ms (Views: 43.0ms | ActiveRecord: 43.5ms | Allocations: 6300)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 10:27:37 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (40.6ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 51ms (Views: 3.3ms | ActiveRecord: 44.4ms | Allocations: 1665)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 11:18:35 -0500
+Processing by HabitsController#index as HTML
+  [1m[36mHabit Load (1.1ms)[0m  [1m[34mSELECT "habits".* FROM "habits"[0m
+  ↳ app/controllers/habits_controller.rb:10:in `index'
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 1.1ms | Allocations: 2577)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 11:48:14 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.6ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 84ms (Views: 38.1ms | ActiveRecord: 2.8ms | Allocations: 1771)
+
+
+Started GET "/habits" for ::1 at 2020-01-15 11:50:27 -0500
+Processing by HabitsController#index as HTML
+  [1m[36mHabit Load (0.5ms)[0m  [1m[34mSELECT "habits".* FROM "habits"[0m
+  ↳ app/controllers/habits_controller.rb:10:in `index'
+Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 0.5ms | Allocations: 2506)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 11:58:33 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.3ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 3.6ms | ActiveRecord: 1.2ms | Allocations: 1771)
+
+
+Started GET "/users/1/habits" for ::1 at 2020-01-15 11:58:36 -0500
+Processing by HabitsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+  [1m[36mHabit Load (0.2ms)[0m  [1m[34mSELECT "habits".* FROM "habits" WHERE "habits"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/habits_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 1.7ms | Allocations: 1665)
+
+

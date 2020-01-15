@@ -6,7 +6,8 @@ class HabitsController < ApplicationController
     if params[:user_id]
       render json: @habits = User.find(params[:user_id]).habits
     else
-      render json: @habit.errors, status: :unprocessable_entity
+      @habit = Habit.all
+      render json: @habit
     end
   end
 
@@ -48,6 +49,6 @@ class HabitsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def habit_params
-      params.require(:habit).permit(:name, :user_id)
+      params.permit(:name)
     end
 end

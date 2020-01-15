@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :logs
+  resources :habits
   resources :users do
     resources :users, :habits
   end
