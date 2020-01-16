@@ -1,0 +1,16 @@
+.create_habit {
+    height: 100vh;
+    margin: 0 ;
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.create_habit_body{
+    height: 80vh;
+}
+
+.create_habit_body > p {
+    margin: 0;
+}
+

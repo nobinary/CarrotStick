@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {NavLink} from 'react-router-dom'
 import axios from "axios";
 import Header from './../components/Header'
 import Footer from './../components/Footer'
@@ -18,7 +19,7 @@ class Habits extends Component {
 
   async componentDidMount() {
     this.fetchHabits()
-    console.log(this.state.data)
+    // console.log(this.state.data)
   }
 
   fetchHabits = async () => {
@@ -30,18 +31,11 @@ class Habits extends Component {
       this.setState({
         habits: habits.data
       });
-      console.log(this.state);
+    //   console.log(this.state);
     } catch (error) {
       console.log("Error: ", error);
     }
   };
-
-  /* Definition of handleClick in component */
-  handleClick = event => {
-    const habit = prompt("Please enter the name of your habit");
-    ///POST REQ
-  };
-
 
   render() {
     return (
@@ -54,7 +48,9 @@ class Habits extends Component {
         <Header header='Habits' />
         <div className='habits_body'>
         <HabitGrid/>
-        <input className='add_habit' type="button" value="Add Habit" onClick={this.handleClick} />
+        <NavLink to='./createhabit'>
+        <input className='add_habit' type="button" value="Add Habit"/>
+        </NavLink>
         </div>
         <Footer/>
       </div>
@@ -63,3 +59,6 @@ class Habits extends Component {
 }
 
 export default Habits;
+
+
+

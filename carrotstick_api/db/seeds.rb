@@ -19,7 +19,7 @@ end
 
 10.times do
     Habit.create(
-        name: Faker::Hipster.sentence(word_count: 2).chop,
+        name: Faker::Name.name.chop,
         user_id: rand(1..5)
     )
 end
