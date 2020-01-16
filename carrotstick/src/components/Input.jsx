@@ -1,4 +1,5 @@
 import React from 'react'
+import './../styles/Input.css'
 
 const Input = props => {
   const {handleChange, name, placeholder, type, value} = props
@@ -6,6 +7,7 @@ const Input = props => {
       <>
         {/* <label htmlFor={name}>{title}</label> */}
         <input
+          className="add_input"
           id={name}
           name={name}
           type={type}

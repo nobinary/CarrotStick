@@ -17,7 +17,7 @@ class Badges extends React.Component {
     render() {
         return(
         <div className='badges'>
-        <p>BADGES</p>
+        <h3>BADGES</h3>
         </div>
         )
     }

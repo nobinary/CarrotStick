@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import axios from "axios";
+import  './../styles/Form.css'
 
 class Form extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Form extends React.Component {
     };
     this.handleAdd = this.handleAdd.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    console.log(props)
+    console.log(props);
   }
 
   handleChange(event) {
@@ -27,20 +28,21 @@ class Form extends React.Component {
 
   async handleAdd(event) {
     event.preventDefault();
-    console.log(this.state.formInputs)
+    console.log(this.state.formInputs);
     const obj = {
-        name: this.state.formInputs.name
-    }
-    console.log(obj)
-    await axios.post("http://localhost:3000/habits", obj)
-    .then( 
-        (response) => { 
-            console.log(response) 
-            console.log(this.props)
-            this.props.props.history.push('/habits');
-        },
-        (error) => { console.log(error) }
-    )
+      name: this.state.formInputs.name
+    };
+    console.log(obj);
+    await axios.post("http://localhost:3000/habits", obj).then(
+      response => {
+        console.log(response);
+        console.log(this.props);
+        this.props.props.history.push("/habits");
+      },
+      error => {
+        console.log(error);
+      }
+    );
     this.setState({
       formInputs: {
         name: ""
@@ -52,6 +54,7 @@ class Form extends React.Component {
     return (
       <form onSubmit={this.handleAdd}>
         <Input
+          className="add_input"
           handleChange={this.handleChange}
           name={"name"}
           placeholder={"habit name"}
@@ -59,7 +62,7 @@ class Form extends React.Component {
           value={this.state.formInputs.name}
           id={"name"}
         />
-        <input type="submit" value="add habit" />
+        <input type="submit" value="add habit" className="add_btn"/>
       </form>
     );
   }

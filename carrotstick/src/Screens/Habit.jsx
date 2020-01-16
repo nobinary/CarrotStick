@@ -106,24 +106,29 @@ class Habit extends React.Component {
       console.log(this.state.formInput.name)
     return (
       <div className="habit">
-        <Header header={this.state.habit}/>
-        <p className="habit_body">{this.state.habit}</p>
-        <button className="delete_btn" onClick={() => this.handleDelete()}>
-          Delete habit
+        <Header header="habit"/>
+        <div className="habit_body">
+        <p className="habit_p">{this.state.habit}</p>
+        <button className="btn" onClick={() => this.handleDelete()}>
+          delete habit
         </button>
-        <form onSubmit={this.handleSubmit}>
+        <div >
+        <form className="rename" onSubmit={this.handleSubmit}>
           <input
+            className="habit_input"
             onChange={this.handleChange}
             placeholder="type new name"
             name={"name"}
             type="text"
             value={this.state.formInput.name}
           ></input>
-          <input className="delete_btn" type="submit" value="Rename habit" />
-        </form>
+          <input className="btn" type="submit" value="rename habit" />
+       </form>
+       </div>
         <NavLink to="/habits">
-          <button className="delete_btn"> Back to list</button>
+          <button className="btn"> back to list</button>
         </NavLink>
+        </div>
         <Footer />
       </div>
     );

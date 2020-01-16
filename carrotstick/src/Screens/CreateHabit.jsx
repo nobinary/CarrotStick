@@ -10,7 +10,7 @@ const CreateHabit = props => {
     <div className="create_habit">
       <Header header="Create Habit" />
       <div className="create_habit_body">
-        <Form props={props} />
+        <Form className="habit_form" props={props} />
       </div>
       <Footer />
     </div>

@@ -4,14 +4,6 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 import "./../styles/HabitGrid.css";
 
-const data = [
-  { id: 1, name: "One" },
-  { id: 2, name: "Two" },
-  { id: 3, name: "Three" },
-  { id: 4, name: "Four" },
-  { id: 5, name: "Five" },
-  { id: 6, name: "Six" }
-];
 
 export default class Graph extends React.Component {
   constructor(props) {
@@ -19,17 +11,15 @@ export default class Graph extends React.Component {
     this.state = {
       dates: [],
       buttons: [],
-      data: [],
       habits: [],
       formInput: {
-        check_in: ""
+        check_in: [{}]
       }
     };
   }
 
   componentDidMount() {
     this.createDates();
-    this.setState({ data });
   }
 
   handleButtonClick = () => {};
@@ -78,8 +68,12 @@ export default class Graph extends React.Component {
     };
     console.log(values);
     this.setState = {
-
+      formInput: {
+        check_in: {values}
+      }
+      ///ISSUES SENDING CHECK-IN TO STATE
     }
+    this.handleSubmit()
     // send values to API
   };
 
@@ -94,26 +88,27 @@ export default class Graph extends React.Component {
       </div>
     ));
 
-  async handleSubmit(event, value) {
-    event.preventDefault();
-    const obj = {
-      name: this.state.formInput.name
-    };
-    console.log(obj);
-    await axios
-      .put(
-        `http://localhost:3000/habits/${this.props.match.params.habit_id}`,
-        obj
-      )
-      .then(
-        response => {
-          console.log(response);
-          this.getHabit();
-        },
-        error => {
-          console.log(error);
-        }
-      );
+  async handleSubmit() {
+    // event.preventDefault();
+    console.log(this.state.formInput);
+    // const obj = {
+    //   name: this.state.formInput.name
+    // };
+    // console.log(obj);
+    // await axios
+    //   .post(
+    //     `http://localhost:3000/logs`,
+    //     obj
+    //   )
+    //   .then(
+    //     response => {
+    //       console.log(response);
+    //       this.getHabit();
+    //     },
+    //     error => {
+    //       console.log(error);
+    //     }
+    //   );
   }
 
   renderData = () => {
@@ -132,7 +127,7 @@ export default class Graph extends React.Component {
             <li
               className="habit_item"
               key={entry.name}
-              style={{ listStyle: "none", width: "6.5em" }}
+              style={{ listStyle: "none", width: "6.5em", textDecoration: "none" }}
             >
               {entry.name}
             </li>

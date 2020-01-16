@@ -2,10 +2,17 @@
     height: 10vh;
     background-color: orange;
     width: 100%;
+    margin: 0;
+    /* display: flex; */
 }
 
+
 .header_txt {
+    /* display: block; */
     color: white;
-    font-size: 25px;
-    padding-left: 20px ;
+    margin: 0;
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    align-content: center;
 }

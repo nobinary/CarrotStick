@@ -1,3 +1,8 @@
 .quote {
-    padding: 10px;
+    padding: 20px;
+    /* padding: 10px; */
+}
+
+.quote > p {
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
