@@ -20,10 +20,10 @@ Full-CRUD Habit-Tracking App with user login, password protection and PSQL datab
 
 [logo]: https://github.com/nobinary/CarrotStick/blob/master/SVG/LogIn.png "Log In Screenshot"
 
-![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/Overview%20Screen.png"Overview Screenshot")
+<!-- ![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/Overview%20Screen.png"Overview Screenshot") -->
 
 [logo]: https://github.com/nobinary/CarrotStick/blob/master/SVG/Overview%20Screen.png "Overview Screenshot"
 
-![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png" Habits Screenshot")
+<!-- ![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png" Habits Screenshot") -->
 
-[logo]: https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png" Habits Screenshot"
+[logo]: https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png "Habits Screenshot"
