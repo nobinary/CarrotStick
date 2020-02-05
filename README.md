@@ -27,3 +27,7 @@ Full-CRUD Habit-Tracking App with user login, password protection and PSQL datab
 ![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png "Habits Screenshot")
 
 [habits]: https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png "Habits Screenshot"
+
+![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png "Habits Screenshot")
+
+[habits]: https://github.com/nobinary/CarrotStick/blob/master/SVG/Habits%20Screen.png "Habits Screenshot"
