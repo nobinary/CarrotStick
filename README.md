@@ -1,5 +1,5 @@
 
-![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/logo.svg?short_path=6afc8fc "Logo Title Text 1")
+![alt text](https://github.com/nobinary/CarrotStick/blob/master/SVG/logo.svg"Logo Title Text 1")
 
 [logo]: https://github.com/nobinary/CarrotStick/blob/master/SVG/logo.svg"logo"
 
