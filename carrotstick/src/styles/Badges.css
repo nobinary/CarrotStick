@@ -5,3 +5,7 @@
 .badges > p {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
+
+.badge_img {
+    width: 100px;
+}

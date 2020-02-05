@@ -6,12 +6,12 @@
     align-content: space-between;
 }
 
-.create_habit_body{
-    height: 80vh;
+a {
+    text-decoration: none;
 }
 
-.create_habit_body > p {
-
+.create_habit_body{
+    height: 80vh;
 }
 
 

@@ -28,16 +28,16 @@ export default class Graph extends React.Component {
     let week = [];
     let buttons = [];
     for (let i = 1; i <= 7; i++) {
-      let first = currentDay.getDate() - currentDay.getDate() + i;
+      let first = currentDay.getDate() - currentDay.getDay() + i;
+      console.log(first);
+      console.log(new Date(currentDay.setDate(first)).toString());
       let day = `${new Date(currentDay.setDate(first))
         .toString()
-        .slice(0, 3)} ${new Date(currentDay.setDate(first))
-        .toISOString()
-        .slice(6, 10)}`;
+        .slice(0, 3)} ${first}`;
       week.push({ day, id: i });
       buttons.push(i);
+      console.log(day)
       // console.log(day);
-      // console.log(currentDay)
     }
     this.setState({ dates: week, buttons });
   };
@@ -48,7 +48,7 @@ export default class Graph extends React.Component {
 
   testData = async () => {
     try {
-      const habits = await axios.get(`http://localhost:3000/habits`);
+      const habits = await axios.get(`http://carrotstick-api.herokuapp.com/habits`);
       // console.log(habits)
       this.setState({
         habits: habits.data
@@ -73,7 +73,7 @@ export default class Graph extends React.Component {
       }
       ///ISSUES SENDING CHECK-IN TO STATE
     }
-    this.handleSubmit()
+    this.handleSubmit(values)
     // send values to API
   };
 
@@ -88,27 +88,36 @@ export default class Graph extends React.Component {
       </div>
     ));
 
-  async handleSubmit() {
-    // event.preventDefault();
-    console.log(this.state.formInput);
-    // const obj = {
-    //   name: this.state.formInput.name
+    // handleDelete = async () => {
+    //   try {
+    //     await axios.delete(
+    //       `http://localhost:3000/logs/3`
+    //     )
+    //   } catch (error) {
+    //     console.log("Error: ", error);
+    //   }
     // };
-    // console.log(obj);
-    // await axios
-    //   .post(
-    //     `http://localhost:3000/logs`,
-    //     obj
-    //   )
-    //   .then(
-    //     response => {
-    //       console.log(response);
-    //       this.getHabit();
-    //     },
-    //     error => {
-    //       console.log(error);
-    //     }
-    //   );
+
+  async handleSubmit(values) {
+    // event.preventDefault();
+    console.log(values);
+    const obj = {
+      check_in: values.date.day
+    };
+    console.log(obj);
+    await axios
+      .post(
+        `http://carrotstick-api.herokuapp.com/logs`,
+        obj
+      )
+      .then(
+        response => {
+          console.log(response);
+        },
+        error => {
+          console.log(error);
+        }
+      );
   }
 
   renderData = () => {
@@ -169,6 +178,9 @@ export default class Graph extends React.Component {
           {this.renderDates()}
         </div>
         {this.renderData()}
+        {/* <button className="btn" onClick={() => this.handleDelete()}>
+          delete habit
+        </button> */}
       </div>
     );
   }

@@ -6,22 +6,22 @@ class Status extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      points: 20
+      points: 0
     };
   }
 
   componentDidMount() {
-    // this.getPoints();
+    this.getPoints();
   }
 
   getPoints = async () => {
     try {
-      const points = await axios.get(`http://localhost:3000/logs`);
+      const points = await axios.get(`http://carrotstick-api.herokuapp.com/logs`);
       console.log(points.data.length);
-      //   this.setState({
-      //     habits: habits.data
-      //   });
-      // console.log(this.state);
+        this.setState({
+          points: points.data.length
+        });
+      console.log(this.state);
     } catch (error) {
       console.log("Error: ", error);
     }
@@ -73,7 +73,7 @@ class Status extends React.Component {
           </div>
         );
       }
-      if ((this.state.points <= 50)) {
+      if ((this.state.points <= 100)) {
         return (
           <div className="status">
    <img src={require("./../media/dung_beetle.gif")} alt="status" className="status_img" />

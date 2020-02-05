@@ -33,7 +33,7 @@ class Form extends React.Component {
       name: this.state.formInputs.name
     };
     console.log(obj);
-    await axios.post("http://localhost:3000/habits", obj).then(
+    await axios.post("http://carrotstick-api.herokuapp.com/habits", obj).then(
       response => {
         console.log(response);
         console.log(this.props);

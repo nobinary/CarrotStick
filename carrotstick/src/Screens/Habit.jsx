@@ -4,8 +4,6 @@ import Footer from "./../components/Footer";
 import Header from "./../components/Header";
 import "./../styles/Habit.css";
 import axios from "axios";
-import Form from "./../components/Form";
-import Input from "./../components/Input";
 import { NavLink } from "react-router-dom";
 
 class Habit extends React.Component {
@@ -28,7 +26,7 @@ class Habit extends React.Component {
   getHabit = async () => {
     try {
       const habit = await axios.get(
-        `http://localhost:3000/habits/${this.props.match.params.habit_id}`
+        `http://carrotstick-api.herokuapp.com/habits/${this.props.match.params.habit_id}`
       );
       console.log(habit.data.name);
       this.setState({
@@ -42,7 +40,7 @@ class Habit extends React.Component {
   handleDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:3000/habits/${this.props.match.params.habit_id}`
+        `http://carrotstick-api.herokuapp.com/habits/${this.props.match.params.habit_id}`
       )
       this.props.history.push('/habits');
       this.forceUpdate();
@@ -69,7 +67,7 @@ class Habit extends React.Component {
     };
     console.log(obj)
     await axios.put(
-        `http://localhost:3000/habits/${this.props.match.params.habit_id}`,obj)
+        `http://carrotstick-api.herokuapp.com/habits/${this.props.match.params.habit_id}`,obj)
         .then(response => {
         console.log(response);
         this.getHabit()
@@ -85,22 +83,6 @@ class Habit extends React.Component {
     });
   }
 
-  //   handleUpdate (event, formInputs) {
-  //     event.preventDefault()
-  //     console.log('in it to win it')
-  //     fetch(`/notices/${formInputs.id}`, {
-  //       body: JSON.stringify(formInputs),
-  //       method: 'PUT',
-  //    headers: {
-  //      'Accept': 'application/json, text/plain, */*',
-  //      'Content-Type': 'application/json'
-  //    }
-  //   })
-  //    .then(updatedNotice => {
-  //      this.getNotices()
-  //    })
-  //    .catch(error => console.log(error))
-  //   }
 
   render() {
       console.log(this.state.formInput.name)

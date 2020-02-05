@@ -25,7 +25,7 @@ class Habits extends Component {
   fetchHabits = async () => {
     try {
       const habits= await axios.get(
-        `http://localhost:3000/users/1/habits`
+        `http://carrotstick-api.herokuapp.com/habits`
       );
     //   console.log(names);
       this.setState({

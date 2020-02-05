@@ -32,7 +32,7 @@ class Quote extends React.Component {
       <div className="quote">
         {/* {this.fetchQuote()} */}
         <h3>QUOTE OF THE DAY</h3>
-        <p>Direct your attention to people; love, help, and care for them.</p>
+        <p>All human actions are equivalent and all are on principle doomed to failure. Jean-Paul Sartre</p>
       </div>
     );
   }
